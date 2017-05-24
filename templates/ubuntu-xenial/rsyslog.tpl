@@ -22,6 +22,9 @@ input(type="imudp" port="514")
 #module(load="imtcp")
 #input(type="imtcp" port="514")
 
+# Enable non-kernel facility klog messages
+$KLogPermitNonKernelFacility on
+
 ###########################
 #### GLOBAL DIRECTIVES ####
 ###########################
